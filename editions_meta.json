@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "date": "2025-09-02",
+    "date_display": "02/09/2025",
+    "subject": "Seu primeiro Financeiro NewS chegou! 🚀",
+    "size_kb": 10201
+  },
+  {
+    "id": 2,
+    "date": "2025-09-08",
+    "date_display": "08/09/2025",
+    "subject": "Olha o jornal quentinho chegando no seu e-mail! ✉️ (agora vai)",
+    "size_kb": 3683
+  },
+  {
+    "id": 3,
+    "date": "2025-09-14",
+    "date_display": "14/09/2025",
+    "subject": "BOM DIA, olha a informação chegando fresquinha no seu e-mail 💸",
+    "size_kb": 15525
+  },
+  {
+    "id": 4,
+    "date": "2025-09-21",
+    "date_display": "21/09/2025",
+    "subject": "setembro chove? não? mas chega mais um jornal 📩",
+    "size_kb": 33136
+  },
+  {
+    "id": 5,
+    "date": "2025-09-28",
+    "date_display": "28/09/2025",
+    "subject": "Aqui você encontra: informações, risadas e uma segunda-feira com cheiro de café fresco! ☕",
+    "size_kb": 455
+  },
+  {
+    "id": 6,
+    "date": "2025-10-05",
+    "date_display": "05/10/2025",
+    "subject": "chegouuuu (sem pão de queijo e café, infelizmente) 📬",
+    "size_kb": 1060
+  },
+  {
+    "id": 7,
+    "date": "2025-10-12",
+    "date_display": "12/10/2025",
+    "subject": "açúcar, tempero e FINANCEIRO NEWS ... esses foram os ingredientes usados para começar sua segunda-feira! 🧁",
+    "size_kb": 342
+  },
+  {
+    "id": 8,
+    "date": "2025-10-19",
+    "date_display": "19/10/2025",
+    "subject": "vamos almoçar? arroz soltinho ... feijão desmanchando e o jornal no email cedinho 📩 ",
+    "size_kb": 1070
+  },
+  {
+    "id": 9,
+    "date": "2025-10-26",
+    "date_display": "26/10/2025",
+    "subject": "dá pra parcelar em 10x sem juros? então bora gastar! 📩",
+    "size_kb": 64
+  },
+  {
+    "id": 10,
+    "date": "2025-11-02",
+    "date_display": "02/11/2025",
+    "subject": "muito cedo pra montar a árvore já? mas não cedo o suficiente pra mais um jornal 📩",
+    "size_kb": 62
+  },
+  {
+    "id": 11,
+    "date": "2025-11-09",
+    "date_display": "09/11/2025",
+    "subject": "vamos buscar conhecimento? 👽 chegou seu jornal preferido! 📩",
+    "size_kb": 64
+  },
+  {
+    "id": 12,
+    "date": "2025-11-16",
+    "date_display": "16/11/2025",
+    "subject": "notícia boa, conhecimento e risadas... mais um Financeiro NewS 📩",
+    "size_kb": 62
+  },
+  {
+    "id": 13,
+    "date": "2025-11-23",
+    "date_display": "23/11/2025",
+    "subject": "o último financeiro news... de novembro/25 , chegouuu! 📩 ",
+    "size_kb": 65
+  },
+  {
+    "id": 14,
+    "date": "2025-11-30",
+    "date_display": "30/11/2025",
+    "subject": "IT'S TIMEEEEE dezembro chegou chegando com jornal fresquinho 📩",
+    "size_kb": 1319
+  },
+  {
+    "id": 15,
+    "date": "2025-12-07",
+    "date_display": "07/12/2025",
+    "subject": "hojeojornaltáenormeentãovoupouparespaço! 📩",
+    "size_kb": 256
+  },
+  {
+    "id": 16,
+    "date": "2025-12-14",
+    "date_display": "14/12/2025",
+    "subject": "hohoho tá chegandooo! mas sabe quem chegou primeiro? seu financeiro NewS 📩",
+    "size_kb": 213
+  },
+  {
+    "id": 17,
+    "date": "2025-12-21",
+    "date_display": "21/12/2025",
+    "subject": "📩 comunicado de ausência temporária do seu, do meu, do nosso: ",
+    "size_kb": 198
+  },
+  {
+    "id": 18,
+    "date": "2026-01-18",
+    "date_display": "18/01/2026",
+    "subject": "Olha eleeeeeee!! Voltamos com tudo em? #financeironews 📩",
+    "size_kb": 69
+  },
+  {
+    "id": 19,
+    "date": "2026-01-25",
+    "date_display": "25/01/2026",
+    "subject": "chegou seu jornal doido kkkk (referências do Elite26) 📩",
+    "size_kb": 474
+  },
+  {
+    "id": 20,
+    "date": "2026-02-01",
+    "date_display": "01/02/2026",
+    "subject": "o de hoje vai fazer você refletir sobre o amanhã! 📩",
+    "size_kb": 171
+  },
+  {
+    "id": 21,
+    "date": "2026-02-08",
+    "date_display": "08/02/2026",
+    "subject": "oi, pode entrar, vem conhecer o financeiro! 📩",
+    "size_kb": 121
+  },
+  {
+    "id": 22,
+    "date": "2026-02-13",
+    "date_display": "13/02/2026",
+    "subject": "edição saBOOOOR *16/02* segunda-feira pré-carnaval 📩",
+    "size_kb": 112
+  },
+  {
+    "id": 23,
+    "date": "2026-02-22",
+    "date_display": "22/02/2026",
+    "subject": "tô invisível, tô invisível ... chegou seu jornal matinal 📩",
+    "size_kb": 237
+  },
+  {
+    "id": 24,
+    "date": "2026-03-01",
+    "date_display": "01/03/2026",
+    "subject": "um choque de conteúdo, chegou seu Financeiro NewS 📩",
+    "size_kb": 271
+  },
+  {
+    "id": 25,
+    "date": "2026-03-08",
+    "date_display": "08/03/2026",
+    "subject": "os tarja preta vai vender também? bom dia! 📩",
+    "size_kb": 66
+  },
+  {
+    "id": 26,
+    "date": "2026-03-15",
+    "date_display": "15/03/2026",
+    "subject": "houve um aumento nesse email em R$ 0,80 o litro 📩",
+    "size_kb": 156
+  },
+  {
+    "id": 27,
+    "date": "2026-03-22",
+    "date_display": "22/03/2026",
+    "subject": "se você parcelar um ovo em 12x vai ser ver comigo 📩",
+    "size_kb": 58
+  },
+  {
+    "id": 28,
+    "date": "2026-03-29",
+    "date_display": "29/03/2026",
+    "subject": "se prepara: vem ai o puxão de orelha de páscoa!  💌",
+    "size_kb": 1718
+  },
+  {
+    "id": 29,
+    "date": "2026-04-05",
+    "date_display": "05/04/2026",
+    "subject": "você faz parte dos 80% ou dos 20%? 📩",
+    "size_kb": 375
+  },
+  {
+    "id": 30,
+    "date": "2026-04-12",
+    "date_display": "12/04/2026",
+    "subject": "se eu fosse você, leria o Financeiro NewS de hoje em! 📩",
+    "size_kb": 90
+  },
+  {
+    "id": 31,
+    "date": "2026-04-19",
+    "date_display": "19/04/2026",
+    "subject": "foi aqui que pediram um documentário sobre o PIX? 📩",
+    "size_kb": 77
+  },
+  {
+    "id": 32,
+    "date": "2026-04-26",
+    "date_display": "26/04/2026",
+    "subject": "vamos falar sobre educação financeira? 📩",
+    "size_kb": 276
+  },
+  {
+    "id": 33,
+    "date": "2026-05-03",
+    "date_display": "03/05/2026",
+    "subject": "pegou o café? vamos começar a semana! 📩",
+    "size_kb": 540
+  },
+  {
+    "id": 34,
+    "date": "2026-05-10",
+    "date_display": "10/05/2026",
+    "subject": "na volta a gente compra 📩",
+    "size_kb": 188
+  },
+  {
+    "id": 35,
+    "date": "2026-05-17",
+    "date_display": "17/05/2026",
+    "subject": "EXTRA! EXTRA! sério que você não vai abrir esse email? 📩",
+    "size_kb": 513
+  },
+  {
+    "id": 36,
+    "date": "2026-05-24",
+    "date_display": "24/05/2026",
+    "subject": "dia dos namorados, copa e festa junina, preparados pra Junho?! 📩",
+    "size_kb": 116
+  }
+]
