@@ -203,7 +203,11 @@ function renderList(items) {
 renderList(sortedDesc);
 function filterEditions() {
   const q = document.getElementById('searchInput').value.toLowerCase();
-  renderList(!q ? sortedDesc : sortedDesc.filter(e => e.subject.toLowerCase().includes(q) || e.date_display.includes(q)));
+  renderList(!q ? sortedDesc : sortedDesc.filter(e =>
+    e.subject.toLowerCase().includes(q) ||
+    e.date_display.includes(q) ||
+    (e.tags && e.tags.some(t => t.toLowerCase().includes(q)))
+  ));
 }
 let calYear = new Date().getFullYear(), calMonth = new Date().getMonth();
 const MONTHS_PT = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
