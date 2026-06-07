@@ -75,7 +75,12 @@
   .modal-close:hover { background: rgba(255,255,255,0.25); }
   .modal-body { overflow-y: auto; padding: 28px 32px; flex: 1; }
   .modal-body img { max-width: 100%; height: auto; }
-  .month-sep { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; padding: 8px 0 4px; border-bottom: 1px solid var(--border); margin-top: 12px; }
+  .month-sep { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; padding: 8px 0 4px; border-bottom: 1px solid var(--border); margin-top: 12px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; user-select: none; }
+  .month-sep:hover { color: var(--blue-light); }
+  .month-sep .month-toggle { font-size: 16px; transition: transform 0.2s; line-height: 1; }
+  .month-sep.collapsed .month-toggle { transform: rotate(-90deg); }
+  .month-group { display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
+  .month-group.collapsed { display: none; }
   .empty-state { text-align: center; padding: 40px; color: var(--text-muted); }
   @media (max-width: 768px) { .main-wrap { grid-template-columns: 1fr; padding: 16px; } .modal-body { padding: 20px; } .header-tagline { display: none; } }
 </style>
@@ -161,21 +166,32 @@ function renderList(items) {
   if (!items.length) { empty.style.display = 'block'; return; }
   empty.style.display = 'none';
   let lastMonth = '';
+  let currentGroup = null;
+  const isFiltering = items.length !== sortedDesc.length;
   items.forEach(ed => {
     const month = ed.date.substring(0,7);
+    const year = ed.date.substring(0,4);
     const monthLabel = new Date(ed.date + 'T12:00:00').toLocaleString('pt-BR', {month:'long',year:'numeric'});
     if (month !== lastMonth) {
+      const startCollapsed = !isFiltering && year === '2025';
       const sep = document.createElement('div');
-      sep.className = 'month-sep';
-      sep.textContent = monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1);
+      sep.className = 'month-sep' + (startCollapsed ? ' collapsed' : '');
+      sep.innerHTML = '<span>' + monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1) + '</span><span class="month-toggle">▾</span>';
       c.appendChild(sep);
+      currentGroup = document.createElement('div');
+      currentGroup.className = 'month-group' + (startCollapsed ? ' collapsed' : '');
+      c.appendChild(currentGroup);
+      sep.onclick = () => {
+        sep.classList.toggle('collapsed');
+        currentGroup.classList.toggle('collapsed');
+      };
       lastMonth = month;
     }
     const item = document.createElement('div');
     item.className = 'edition-item';
-    item.innerHTML = '<div class="edition-num">#' + String(ed.id).padStart(2,'0') + '</div><div class="edition-info"><div class="edition-subject">' + ed.subject + '</div><div class="edition-date">' + ed.date_display + '</div></div><div class="edition-arrow">›</div>';
+    item.innerHTML = '<div class=\"edition-num\">#' + String(ed.id).padStart(2,'0') + '</div><div class=\"edition-info\"><div class=\"edition-subject\">' + ed.subject + '</div><div class=\"edition-date\">' + ed.date_display + '</div></div><div class=\"edition-arrow\">›</div>';
     item.onclick = () => openEdition(ed.id);
-    c.appendChild(item);
+    currentGroup.appendChild(item);
   });
 }
 renderList(sortedDesc);
