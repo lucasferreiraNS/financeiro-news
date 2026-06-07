@@ -121,7 +121,7 @@
     <div class="card">
       <div class="card-title">📊 Histórico</div>
       <div class="stats-grid">
-        <div class="stat-item"><div class="stat-num">37</div><div class="stat-label">Edições publicadas</div></div>
+        <div class="stat-item"><div class="stat-num">38</div><div class="stat-label">Edições publicadas</div></div>
         <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">Meses de história</div></div>
         <div class="stat-item"><div class="stat-num">set/25</div><div class="stat-label">Primeira edição</div></div>
         <div class="stat-item"><div class="stat-num" style="font-size:15px;padding-top:8px">Segunda-Feira</div><div class="stat-label">Toda semana</div></div>
@@ -165,9 +165,9 @@ function renderList(items) {
   c.innerHTML = '';
   if (!items.length) { empty.style.display = 'block'; return; }
   empty.style.display = 'none';
+  const isFiltering = items.length !== sortedDesc.length;
   let lastMonth = '';
   let currentGroup = null;
-  const isFiltering = items.length !== sortedDesc.length;
   items.forEach(ed => {
     const month = ed.date.substring(0,7);
     const year = ed.date.substring(0,4);
@@ -177,14 +177,17 @@ function renderList(items) {
       const sep = document.createElement('div');
       sep.className = 'month-sep' + (startCollapsed ? ' collapsed' : '');
       sep.innerHTML = '<span>' + monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1) + '</span><span class="month-toggle">▾</span>';
+      const group = document.createElement('div');
+      group.className = 'month-group' + (startCollapsed ? ' collapsed' : '');
       c.appendChild(sep);
-      currentGroup = document.createElement('div');
-      currentGroup.className = 'month-group' + (startCollapsed ? ' collapsed' : '');
-      c.appendChild(currentGroup);
-      sep.onclick = () => {
-        sep.classList.toggle('collapsed');
-        currentGroup.classList.toggle('collapsed');
-      };
+      c.appendChild(group);
+      sep.addEventListener('click', (function(s, g) {
+        return function() {
+          s.classList.toggle('collapsed');
+          g.classList.toggle('collapsed');
+        };
+      })(sep, group));
+      currentGroup = group;
       lastMonth = month;
     }
     const item = document.createElement('div');
