@@ -88,14 +88,27 @@
     .main-wrap { grid-template-columns: 1fr; padding: 16px; }
     .modal-body { padding: 20px; }
     .header-tagline { display: none; }
-    .header-inner { padding: 10px 16px; }
-    .header-badge { font-size: 10px; padding: 3px 8px; white-space: nowrap; max-width: 160px; overflow: hidden; text-overflow: ellipsis; }
+    .header-inner { padding: 10px 16px; overflow: hidden; }
+    .header-badge { font-size: 10px; padding: 3px 8px; white-space: nowrap; flex-shrink: 0; }
     .header-logo-group img { height: 36px; }
+    .cal-grid { gap: 2px; }
+    .cal-day { font-size: 11px; }
+    .cal-dow { font-size: 10px; }
+    .cal-month { font-size: 14px; }
+    .stat-num { font-size: 22px; }
+    .edition-subject { font-size: 13px; }
+    .edition-num { min-width: 40px; height: 40px; font-size: 11px; }
   }
   @media (max-width: 480px) {
     .header-badge { display: none; }
     .header-logo-group { gap: 8px; }
     .header-logo-group img { height: 30px; }
+    .cal-day { font-size: 10px; }
+    .featured-num { font-size: 32px; }
+  }
+  @media (orientation: portrait) and (max-width: 768px) {
+    .header-badge { display: none; }
+    .header-tagline { display: none; }
   }
 </style>
 </head>
