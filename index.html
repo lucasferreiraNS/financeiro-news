@@ -276,7 +276,8 @@ async function openEdition(id) {
   try {
     const resp = await fetch('editions/ed_' + String(id).padStart(2,'0') + '.html');
     const html = await resp.text();
-    document.getElementById('modalBody').innerHTML = html;
+    const cleanHtml = html.substring(html.indexOf('<'));
+    document.getElementById('modalBody').innerHTML = cleanHtml;
   } catch(e) {
     document.getElementById('modalBody').innerHTML = '<p style="color:#999;text-align:center;padding:40px">Conteúdo não disponível no modo local.</p>';
   }
